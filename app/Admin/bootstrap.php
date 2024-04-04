@@ -3,6 +3,11 @@
 use Slowlyo\OwlAdmin\Admin;
 
 
+$footer = '<a href="https://github.com/slowlyo/owl-admin" target="_blank" class="font-bold">Owl Admin</a>
+<span>&emsp;&emsp;站点将在每天 0:00 重置</span>';
+
+config()->set('admin.layout.footer', $footer);
+
 // Navbar ==========================================================================================
 
 // Github 链接
@@ -34,7 +39,7 @@ Admin::scripts('window.localStorage.setItem("admin-api-loginParams", "JTdCJTIydX
 // Menu ==========================================================================================
 
 Admin::menu()->add([
-    // dev example
+    // region dev example
     [
         'id'    => 9998,
         'title' => '开发示例',
@@ -71,6 +76,15 @@ Admin::menu()->add([
         'icon'      => 'vscode-icons:file-type-blade',
     ],
     [
+        'id'        => 10005,
+        'parent_id' => 9998,
+        'title'     => 'CRUD 示例 (文章)',
+        'url'       => '/dev_example/articles',
+        'icon'      => 'fluent-emoji-flat:bookmark-tabs',
+    ],
+    // endregion
+
+    [
         'id'       => 11001,
         'title'    => 'AMIS 示例',
         'url'      => 'https://aisuda.bce.baidu.com/amis/examples/index',
@@ -79,14 +93,14 @@ Admin::menu()->add([
         'order'    => 2,
     ],
     [
-        'id'       => 12001,
-        'title'    => 'iframe',
-        'url'      => '/iframe',
-        'icon'     => 'material-symbols:iframe-outline-rounded',
-        'order'    => 2,
+        'id'    => 12001,
+        'title' => 'iframe',
+        'url'   => '/iframe',
+        'icon'  => 'material-symbols:iframe-outline-rounded',
+        'order' => 2,
     ],
 
-    // dcat demo
+    // region dcat demo
     [
         'id'    => 200,
         'title' => 'Dcat Demo',
@@ -228,4 +242,6 @@ Admin::menu()->add([
         'url'       => '/dcat/statement',
         'icon'      => 'noto:warning',
     ],
+
+    // endregion
 ]);

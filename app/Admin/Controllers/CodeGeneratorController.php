@@ -3,7 +3,6 @@
 namespace App\Admin\Controllers;
 
 use App\Support\Components;
-use Illuminate\Http\Request;
 
 class CodeGeneratorController extends \Slowlyo\OwlAdmin\Controllers\DevTools\CodeGeneratorController
 {
@@ -21,16 +20,6 @@ class CodeGeneratorController extends \Slowlyo\OwlAdmin\Controllers\DevTools\Cod
                     )
                 )
         );
-    }
-
-    public function store(Request $request): \Illuminate\Http\JsonResponse|\Illuminate\Http\Resources\Json\JsonResource
-    {
-        return $this->response()->fail('演示站点, 不支持该操作哟');
-    }
-
-    public function saveComponentProperty(Request $request)
-    {
-        return $this->response()->fail('演示站点, 不支持该操作哟');
     }
 
     private function css()

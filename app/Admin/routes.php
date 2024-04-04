@@ -11,15 +11,6 @@ Route::group([
 
     $router->resource('dashboard', \App\Admin\Controllers\HomeController::class);
 
-    $router->put('/user_setting', [\App\Admin\Controllers\AuthController::class, 'saveUserSetting']);
-
-    $router->post('/login', [\App\Admin\Controllers\AuthController::class, 'login']);
-
-    $router->post('/_settings', function () {
-        return \Slowlyo\OwlAdmin\Admin::response()->fail('演示环境禁止修改设置');
-    });
-
-
     $router->group(['prefix' => 'system'], function (\Illuminate\Routing\Router $router) {
         // 管理员
         $router->resource('admin_users', \App\Admin\Controllers\AdminUserController::class);
@@ -31,11 +22,6 @@ Route::group([
         $router->resource('admin_roles', \App\Admin\Controllers\AdminRoleController::class);
         // 权限
         $router->resource('admin_permissions', \App\Admin\Controllers\AdminPermissionController::class);
-
-        $router->post('_admin_permissions_auto_generate', [
-            \App\Admin\Controllers\AdminPermissionController::class,
-            'autoGenerate',
-        ]);
     });
 
     // 开发工具
@@ -56,20 +42,7 @@ Route::group([
         $router->post('extensions/save_config', [\App\Admin\Controllers\ExtensionController::class, 'saveConfig']);
         // 获取扩展配置表单
         $router->post('extensions/config_form', [\App\Admin\Controllers\ExtensionController::class, 'configForm']);
-
-        // 预加载
-        $router->post('terminal/preload', [\App\Admin\Controllers\TerminalController::class, 'preload']);
-        // 终端执行命令
-        $router->post('terminal/exec', [\App\Admin\Controllers\TerminalController::class, 'exec']);
     });
-
-    // 图片上传
-    $router->any('upload_image', fn() => \Slowlyo\OwlAdmin\Admin::response()->fail('上传失败', 500));
-    // 文件上传
-    $router->any('upload_file', fn() => \Slowlyo\OwlAdmin\Admin::response()->fail('上传失败', 500));
-    // 富文本编辑器上传
-    $router->any('upload_rich', fn() => \Slowlyo\OwlAdmin\Admin::response()->fail('上传失败', 500));
-
 
     // example
     $router->group(['prefix' => 'example'], function (Router $router) {
@@ -93,6 +66,7 @@ Route::group([
         $router->resource('data_mapping', \App\Admin\Controllers\DevExample\DataMappingController::class);
         $router->resource('condition_builder', \App\Admin\Controllers\DevExample\ConditionBuilderController::class);
         $router->resource('blade_view', \App\Admin\Controllers\DevExample\BladeViewController::class);
+        $router->resource('articles', \App\Admin\Controllers\DevExample\ArticleController::class);
     });
 
     // dcat demo

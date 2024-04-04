@@ -3,7 +3,6 @@
 namespace App\Admin\Controllers;
 
 use App\Support\Components;
-use Illuminate\Http\Request;
 use Slowlyo\OwlAdmin\Controllers\AdminController;
 
 class IframeController extends AdminController
