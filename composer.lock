@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "3aa2b38543f623edac7097aebd293f47",
+    "content-hash": "c78075ead4112cdeec63aa12584704ab",
     "packages": [
         {
             "name": "brick/math",
@@ -3099,16 +3099,16 @@
         },
         {
             "name": "slowlyo/owl-admin",
-            "version": "dev-master",
+            "version": "v3.5.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slowlyo/owl-admin.git",
-                "reference": "8edc3ed8b7e7878450d2b573f9940639ad4ba75e"
+                "reference": "29767ca4deebfcd3676dc055c750a185484ff77f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slowlyo/owl-admin/zipball/8edc3ed8b7e7878450d2b573f9940639ad4ba75e",
-                "reference": "8edc3ed8b7e7878450d2b573f9940639ad4ba75e",
+                "url": "https://api.github.com/repos/slowlyo/owl-admin/zipball/29767ca4deebfcd3676dc055c750a185484ff77f",
+                "reference": "29767ca4deebfcd3676dc055c750a185484ff77f",
                 "shasum": ""
             },
             "require": {
@@ -3118,7 +3118,6 @@
                 "php": ">=8.0",
                 "slowlyo/laravel-support": "*"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -3161,10 +3160,10 @@
                 "email": "slowlyo_email@qq.com",
                 "forum": "https://github.com/Slowlyo/owl-admin/discussions",
                 "issues": "https://github.com/Slowlyo/owl-admin/issues",
-                "source": "https://github.com/slowlyo/owl-admin/tree/master",
+                "source": "https://github.com/slowlyo/owl-admin/tree/v3.5.6",
                 "wiki": "https://doc.owladmin.com/"
             },
-            "time": "2024-04-04T03:52:24+00:00"
+            "time": "2024-04-02T06:12:27+00:00"
         },
         {
             "name": "symfony/console",
@@ -8377,9 +8376,7 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "slowlyo/owl-admin": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
