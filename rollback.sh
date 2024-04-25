@@ -38,7 +38,7 @@ git clean -f
 git pull
 
 # 清除缓存 ==========================================================================================
-php artisan cache:clear
+php artisan optimize:clear
 php artisan storage:link
 
 
