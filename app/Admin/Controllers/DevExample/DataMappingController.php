@@ -49,7 +49,7 @@ class DataMappingController extends AdminController
                 // Status 组件
                 amis()->TableColumn('state', '状态 (Status组件)')->type('status'),
                 // Mapping 组件渲染 Tag 组件
-                amis()->TableColumn('category', '类型 (Tag组件)')
+                amis()->TableColumn('category', '类型 (Tag)')
                     ->type('mapping')
                     ->map($this->service->categoryTagMap()),
                 // 表达式
