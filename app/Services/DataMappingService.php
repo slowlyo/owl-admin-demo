@@ -21,7 +21,7 @@ class DataMappingService extends AdminService
         $map = ['', '', 'active', 'inactive', 'error', 'success', 'warning'];
 
         return collect($this->categoryMap())->map(function ($item, $index) use ($map) {
-            return amis()->Tag()->label($item)->color($map[$index]);
+            return "<span class='cxd-Tag cxd-Tag--normal cxd-Tag--normal--{$map[$index]}'>{$item}</span>";
         });
     }
 
