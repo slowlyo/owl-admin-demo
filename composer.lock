@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "c78075ead4112cdeec63aa12584704ab",
+    "content-hash": "8578350043b15471f3b0c72e01954a65",
     "packages": [
         {
             "name": "brick/math",
@@ -3099,16 +3099,16 @@
         },
         {
             "name": "slowlyo/owl-admin",
-            "version": "v3.5.8",
+            "version": "v3.6.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/slowlyo/owl-admin.git",
-                "reference": "46681cd8472224e03150045e4c25f5dc108d9c1b"
+                "reference": "3266d5209584fdbc2447b4fe06b32e0e77dcfb18"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slowlyo/owl-admin/zipball/46681cd8472224e03150045e4c25f5dc108d9c1b",
-                "reference": "46681cd8472224e03150045e4c25f5dc108d9c1b",
+                "url": "https://api.github.com/repos/slowlyo/owl-admin/zipball/3266d5209584fdbc2447b4fe06b32e0e77dcfb18",
+                "reference": "3266d5209584fdbc2447b4fe06b32e0e77dcfb18",
                 "shasum": ""
             },
             "require": {
@@ -3158,12 +3158,12 @@
             ],
             "support": {
                 "email": "slowlyo_email@qq.com",
-                "forum": "https://github.com/Slowlyo/owl-admin/discussions",
+                "forum": "https://github.com/orgs/owl-admin/discussions",
                 "issues": "https://github.com/Slowlyo/owl-admin/issues",
-                "source": "https://github.com/slowlyo/owl-admin/tree/v3.5.8",
+                "source": "https://github.com/slowlyo/owl-admin/tree/v3.6.8",
                 "wiki": "https://doc.owladmin.com/"
             },
-            "time": "2024-04-10T06:29:44+00:00"
+            "time": "2024-05-20T16:47:16+00:00"
         },
         {
             "name": "symfony/console",
@@ -8383,5 +8383,5 @@
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.6.0"
+    "plugin-api-version": "2.0.0"
 }

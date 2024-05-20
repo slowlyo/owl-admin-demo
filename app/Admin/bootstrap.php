@@ -17,7 +17,8 @@ $githubBtn = amis()
     ->blank()
     ->url('https://github.com/Slowlyo/owl-admin-demo')
     ->tooltip('demo 源码')
-    ->className('mr-2 rounded-full');
+    ->iconClassName('text-xl pt-1')
+    ->className('mr-2 border-0 hover:border-0');
 
 // 版本信息
 $composer = \Slowlyo\OwlAdmin\Support\Composer::parse(base_path('composer.lock'))->toArray();
