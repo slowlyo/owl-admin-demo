@@ -3103,12 +3103,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/slowlyo/owl-admin.git",
-                "reference": "3266d5209584fdbc2447b4fe06b32e0e77dcfb18"
+                "reference": "5eaa517630cb7b3edb243a7d3ca91e89cbb9dbed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/slowlyo/owl-admin/zipball/3266d5209584fdbc2447b4fe06b32e0e77dcfb18",
-                "reference": "3266d5209584fdbc2447b4fe06b32e0e77dcfb18",
+                "url": "https://api.github.com/repos/slowlyo/owl-admin/zipball/5eaa517630cb7b3edb243a7d3ca91e89cbb9dbed",
+                "reference": "5eaa517630cb7b3edb243a7d3ca91e89cbb9dbed",
                 "shasum": ""
             },
             "require": {
@@ -3163,7 +3163,7 @@
                 "source": "https://github.com/slowlyo/owl-admin/tree/v3.6.8",
                 "wiki": "https://doc.owladmin.com/"
             },
-            "time": "2024-05-20T16:47:16+00:00"
+            "time": "2024-05-21T15:45:22+00:00"
         },
         {
             "name": "symfony/console",
@@ -8383,5 +8383,5 @@
         "php": "^8.0.2"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.0.0"
+    "plugin-api-version": "2.6.0"
 }
