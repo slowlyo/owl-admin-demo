@@ -243,7 +243,7 @@ CREATE TABLE IF NOT EXISTS `admin_settings` (
 
 INSERT INTO `admin_settings` (`key`, `values`, `created_at`, `updated_at`) VALUES
 ('admin_locale', '\"zh_CN\"', '2024-05-24 23:39:48', '2024-06-02 21:19:35'),
-('system_theme_setting', NULL, NULL, '2024-05-21 00:54:00');
+('system_theme_setting', '{\"darkTheme\":false,\"footer\":true,\"breadcrumb\":true,\"themeColor\":\"#1677ff\",\"layoutMode\":\"double\",\"siderTheme\":\"light\",\"topTheme\":\"light\",\"animateInType\":\"alpha\",\"animateInDuration\":600,\"animateOutType\":\"alpha\",\"animateOutDuration\":600,\"loginTemplate\":\"default\",\"keepAlive\":false,\"enableTab\":true,\"tabIcon\":true,\"accordionMenu\":false}', NULL, '2024-06-02 21:26:01');
 
 DROP TABLE IF EXISTS `admin_users`;
 CREATE TABLE IF NOT EXISTS `admin_users` (
