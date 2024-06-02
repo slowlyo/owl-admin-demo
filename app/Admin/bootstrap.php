@@ -18,7 +18,7 @@ $githubBtn = amis()
     ->url('https://github.com/Slowlyo/owl-admin-demo')
     ->tooltip('demo 源码')
     ->iconClassName('text-xl pt-1')
-    ->className('mr-2 border-0 hover:border-0');
+    ->className('mr-2 bcustom_order-0 hover:bcustom_order-0');
 
 // 版本信息
 $composer = \Slowlyo\OwlAdmin\Support\Composer::parse(base_path('composer.lock'))->toArray();
@@ -46,7 +46,7 @@ Admin::menu()->add([
         'title' => '开发示例',
         'url'   => '/dev_example',
         'icon'  => 'vscode-icons:file-type-bolt',
-        'order' => 1,
+        'custom_order' => 1,
     ],
     [
         'id'        => 10001,
@@ -91,14 +91,14 @@ Admin::menu()->add([
         'url'      => 'https://aisuda.bce.baidu.com/amis/examples/index',
         'url_type' => 2,
         'icon'     => 'twemoji:link',
-        'order'    => 2,
+        'custom_order'    => 2,
     ],
     [
         'id'    => 12001,
         'title' => 'iframe',
         'url'   => '/iframe',
         'icon'  => 'material-symbols:iframe-outline-rounded',
-        'order' => 2,
+        'custom_order' => 2,
     ],
 
     // region dcat demo
@@ -107,7 +107,7 @@ Admin::menu()->add([
         'title' => 'Dcat Demo',
         'url'   => '/dcat',
         'icon'  => 'carbon:demo',
-        'order' => 1,
+        'custom_order' => 1,
     ],
     [
         'id'        => 201,
