@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::domain('demo.owladmin.com')->get('/', fn() => redirect('/admin'));
+Route::get('/', fn() => redirect('/admin'));
 
 Route::get('/doc', [\App\Http\Controllers\IndexController::class, 'index']);
 
